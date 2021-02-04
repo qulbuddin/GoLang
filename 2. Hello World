@@ -1,0 +1,15 @@
+package main
+
+import "fmt" //package fmt disediakan oleh go untuk keperluan I/O yang berhubungan dengan text.
+
+func main(){
+	fmt.Println("hello world, hahaha . ..")
+	fmt.Println("hello world,","how are you ?") //menggabungkan dua string bisa pakai tanda koma.
+}
+//function main harus ada dalam sebuah projek di file main.go
+//dan yang akan dieksekusi pertama kali ketika menjalankan program (go run main.go) adalah function tersebut.
+/*
+mkdir <nama-project>						//Create Folder Project 
+cd <nama-project> 							//Create Nama Project
+go mod init <nama-project> 			//untuk inisalisasi projek pada Go
+*/
