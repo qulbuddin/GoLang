@@ -1,0 +1,28 @@
+package main
+
+import "fmt" //library yang disediakan golang untuk mengani I/O text.
+
+func main() { // function main adalah script yan di eksekuli pertama kali ketila program dijalankeun.
+
+	var firstname string = "alber" //Deklarasi Variabel Beserta Tipe Data
+	var lastname string            ////Deklarasi Variabel Beserta Tipe Data
+	lastname = "qulbuddin mohammad"
+	fmt.Printf("\n haloo %s %s!\n", firstname, lastname) //fmt.Printf : struktur outputnya didefinisikan di awal.
+	fmt.Println(" hai", firstname, lastname+" hahaha")   // tanda + adalah penggabungan string atau string concatenation.
+
+	keterangan := "Selamat belajar golang" // Deklarasi Variabel Tanpa Tipe Data
+
+	fmt.Println("\n", keterangan)
+
+	//contoh lain :
+	var yourname = "siapa namamu ?"
+	fmt.Println("\n panggil saya " + firstname + ", lalu " + yourname)
+	//Perlu diketahu, deklarasi menggunakan := hanya bisa dilakukan di dalam blok fungsi.
+	//Tanda := hanya digunakan sekali di awal pada saat deklarasi.
+
+	//Deklarasi Multi Variable :
+	var satu, dua, tiga string = "isinya satu", "isinya dua", "isinya tiga"
+	fmt.Println("\n "+dua, satu, tiga)
+
+	//Next Variable Underscore
+}
