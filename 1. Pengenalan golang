@@ -1,0 +1,27 @@
+0:45 26/11/2020 :
+      go mod init "nama projek" : akan menghasilkan file go.mod yang menandakan folder tersebut adalah letak dari project.
+			File ini digunakan oleh Go toolchain untuk menandai bahwa folder dimana file tersebut berada adalah folder projek
+
+			Dalam menggunakan bahasa go ada baiknya menggunakan text editor yang anda sukai, dalam hal ini saya menggunakan visual studio code
+			Adapun extensi yang digunakan untuk instalasi go di vs-code adalah :
+			1. go 
+			2. editorconfig (membantu kita supaya coding style menjadi konsisten untuk dibaca oleh banyak developer, 
+			   dan juga ketika dimuat pada berbagai macam IDE.)
+			Intermezo : CLI atau Command Line Interface
+
+			Eksekusi project dengan : go run "nama projek".
+			Command go run hanya bisa digunakan pada file yang nama package-nya adalah main "main.go"
+
+			go test main_test.go : tanda _test menandakan kita menjalankan package testing
+
+			go build : Command ini digunakan untuk mengkompilasi file program. dijalankan dari directori projek
+
+			go get digunakan untuk men-download package.
+			go get -u github.com/segmentio/kafka-go : untuk update dependensi terbaru
+			Command go get harus dijalankan dalam folder project
+
+			go mod tidy digunakan untuk memvalidasi dependensi. Jika ada dependensi yang belum ter-download, maka akan otomatis di-download.
+
+			
+
+
