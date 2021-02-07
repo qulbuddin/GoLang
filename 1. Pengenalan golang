@@ -1,5 +1,4 @@
-0:45 26/11/2020 :
-      go mod init "nama projek" : akan menghasilkan file go.mod yang menandakan folder tersebut adalah letak dari project.
+0:45 26/11/2020 :       go mod init "nama projek" : akan menghasilkan file go.mod yang menandakan folder tersebut adalah letak dari project.
 			File ini digunakan oleh Go toolchain untuk menandai bahwa folder dimana file tersebut berada adalah folder projek
 
 			Dalam menggunakan bahasa go ada baiknya menggunakan text editor yang anda sukai, dalam hal ini saya menggunakan visual studio code
