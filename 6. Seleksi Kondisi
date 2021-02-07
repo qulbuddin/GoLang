@@ -1,0 +1,65 @@
+Example :
+var point = 8
+
+if point == 10 {
+    fmt.Println("lulus dengan nilai sempurna")
+} else if point > 5 {
+    fmt.Println("lulus")
+} else if point == 4 {
+    fmt.Println("hampir lulus")
+} else {
+    fmt.Printf("tidak lulus. nilai anda %d\n", point)
+}
+
+#Variabel temporary pada seleksi kondisi :
+var point = 8840.0
+
+if percent := point / 100; percent >= 100 {
+    fmt.Printf("%.1f%s perfect!\n", percent, "%")
+} else if percent >= 70 {
+    fmt.Printf("%.1f%s good\n", percent, "%")
+} else {
+    fmt.Printf("%.1f%s not bad\n", percent, "%")
+}
+//Deklarasi variabel temporary hanya bisa dilakukan lewat metode type inference yang menggunakan tanda :=. 
+//Penggunaan keyword var disitu tidak diperbolehkan karena akan menyebabkan error.
+
+#Seleksi kondisi menggunakan switch case :
+var point = 6
+
+switch point {
+case 8:
+    fmt.Println("perfect")
+case 7:
+    fmt.Println("awesome")
+default:
+    fmt.Println("not bad")
+}
+
+#switch-case banyak kondisi :
+
+var point = 6
+
+switch point {
+case 8:
+    fmt.Println("perfect")
+case 7, 6, 5, 4:
+    fmt.Println("awesome")
+default:
+    fmt.Println("not bad")
+}
+
+#switch-case gaya if-else :
+var point = 6
+
+switch {
+case point == 8:
+    fmt.Println("perfect")
+case (point < 8) && (point > 3):
+    fmt.Println("awesome")
+default:
+    {
+        fmt.Println("not bad")
+        fmt.Println("you need to learn more")
+    }
+} // fallthrough ditambahkan maka akan tetap melakukan pengecekan pada kodisi selanutnya.
