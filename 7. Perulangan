@@ -1,0 +1,38 @@
+#Contoh_1
+for i := 0; i < 5; i++ {
+    fmt.Println("Angka", i)
+}
+
+#Contoh_2
+var i = 0
+
+for i < 5 {
+    fmt.Println("Angka", i)
+    i++
+}
+
+#Contoh_3
+
+var i = 0
+
+for {
+    fmt.Println("Angka", i)
+
+    i++
+    if i == 5 {
+        break
+    }
+} // Akan berhenti ketika nilai i == 5 (sama dengan)
+
+#Contoh_4
+for i := 1; i <= 10; i++ {
+    if i % 2 == 1 {
+        continue //paksa lanut ke perulangan berikutnya
+    }
+
+    if i > 8 {
+        break //Paksa perulangan berhenti
+    }
+
+    fmt.Println("Angka", i)
+}
